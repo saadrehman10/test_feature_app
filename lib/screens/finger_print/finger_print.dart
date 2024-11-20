@@ -9,7 +9,7 @@ class FingerPrint extends StatefulWidget {
 }
 
 class _FingerPrintState extends State<FingerPrint> {
-  late final LocalAuthentication auth;
+  late LocalAuthentication auth;
   bool _supportState = false;
 
   @override
