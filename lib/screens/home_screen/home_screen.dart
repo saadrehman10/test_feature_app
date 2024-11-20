@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_feature_app/utils/colors.dart';
 import 'package:test_feature_app/utils/text.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -15,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: Center(
           child: Column(children: [
+            // Elevated buttons for FingerPrint screen
             ElevatedButton(
                 onPressed: () {
                   Navigator.pushNamed(context, '/FingerPrint');
@@ -22,7 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: const Text(
                   ButtonText.fingerPrintPage,
                   style: TextStyle(
-                    color: Colors.black,
+                    color: AppColors.secondary,
                   ),
                 ))
           ]),
